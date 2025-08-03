@@ -3,8 +3,8 @@ import Link from "next/link";
 export const UserCard = ({ user }) => {
   return (
     <Link
-      href={"/"}
-      className="max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+      href={`/${user.id}`}
+      className="w-full bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 h-fit"
     >
       {/* Header Section */}
       <div className="bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-4">
