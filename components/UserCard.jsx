@@ -3,7 +3,7 @@ import Link from "next/link";
 export const UserCard = ({ user }) => {
   return (
     <Link
-      href={`/${user.id}`}
+      href={`/users/${user.id}`}
       className="w-full bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 h-fit"
     >
       {/* Header Section */}
@@ -70,14 +70,6 @@ export const UserCard = ({ user }) => {
                 d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"
               />
             </svg>
-            <Link
-              href={`https://${user.website}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 hover:text-blue-700 hover:underline"
-            >
-              {user.website}
-            </Link>
           </div>
         </div>
       </div>
