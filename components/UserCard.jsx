@@ -70,14 +70,14 @@ export const UserCard = ({ user }) => {
                 d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"
               />
             </svg>
-            <a
+            <Link
               href={`https://${user.website}`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-700 hover:underline"
             >
               {user.website}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

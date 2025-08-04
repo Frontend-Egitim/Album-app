@@ -9,14 +9,11 @@ export default async function Home() {
     console.log(error);
   }
 
-  if (true) {
-    filteredList = filteredList.filter((item) => item.id == 5);
-  }
 
   return (
     <div className="px-4 py-8">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {filteredList.map((user) => (
+        {data.map((user) => (
           <UserCard user={user} key={user.id} />
         ))}
       </div>
