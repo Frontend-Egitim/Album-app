@@ -1,3 +1,6 @@
+import Link from "next/link";
+
+
 export default async function UserPage({ params }) {
   const { user_id } = await params;
 
@@ -13,6 +16,13 @@ export default async function UserPage({ params }) {
     <div>
       <h1>{response.name}</h1>
       <h1>{response.email}</h1>
-    </div>
-  );
+    
+  
+<div>
+   <Link href={`/${user_id}/albums`} >
+          Albümlere git
+        </Link>
+</div>
+</div>
+);
 }
