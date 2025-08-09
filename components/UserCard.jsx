@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 export const UserCard = ({ user }) => {
@@ -70,14 +72,12 @@ export const UserCard = ({ user }) => {
                 d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"
               />
             </svg>
-            <a
-              href={`https://${user.website}`}
-              target="_blank"
-              rel="noopener noreferrer"
+            <div
+              onClick={() => window.open(`${user.website}`, "_blank")}
               className="text-blue-500 hover:text-blue-700 hover:underline"
             >
               {user.website}
-            </a>
+            </div>
           </div>
         </div>
       </div>
